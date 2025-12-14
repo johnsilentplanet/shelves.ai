@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1034727065072",
+    "project_id": "shelves-flutter",
+    "storage_bucket": "shelves-flutter.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1034727065072:android:afb9a4eac7c3dc49d18935",
+        "android_client_info": {
+          "package_name": "com.shelves.shelves_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvyXvAAs0lDIlccYOrWZJnXU3-LC5Luz0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
