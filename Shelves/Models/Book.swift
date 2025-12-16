@@ -20,7 +20,13 @@ final class Book {
     var dateAdded: Date
     
     // Marketing & Retention
-    var readingStatus: ReadingStatus = ReadingStatus.unread
+    var readingStatusRaw: String = ReadingStatus.unread.rawValue
+    
+    @Transient
+    var readingStatus: ReadingStatus {
+        get { ReadingStatus(rawValue: readingStatusRaw) ?? .unread }
+        set { readingStatusRaw = newValue.rawValue }
+    }
     var currentPage: Int = 0
     var pageCount: Int = 0
     var rating: Int?
@@ -52,7 +58,8 @@ final class Book {
         self.descriptionText = descriptionText
         self.locationId = locationId
         self.dateAdded = dateAdded
-        self.readingStatus = readingStatus
+        self.dateAdded = dateAdded
+        self.readingStatusRaw = readingStatus.rawValue
         self.currentPage = currentPage
         self.pageCount = pageCount
     }

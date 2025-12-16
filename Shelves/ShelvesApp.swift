@@ -1,10 +1,3 @@
-//
-//  ShelvesApp.swift
-//  Shelves
-//
-//  Created by John Moody on 12/15/25.
-//
-
 import SwiftUI
 import SwiftData
 
